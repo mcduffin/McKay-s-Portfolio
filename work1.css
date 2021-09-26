@@ -1,0 +1,205 @@
+html {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: black;
+}
+
+body {
+  margin-top: -5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: #77E679;
+}
+
+header {
+  width: 100%;
+  height: 64px;
+  background-color: #389416;
+}
+
+.homebtn {
+  position: relative;
+  bottom: 50px;
+  left: 25px;
+}
+
+.homebtn img {
+  max-height: 45px;
+  max-width: 45px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #156117;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #77E679;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  background-color: #77E679;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  min-height: 550px;
+  position: relative;
+}
+
+.words {
+  position: relative;
+  color: black;
+  margin-left: 125px;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.words a {
+  border: 2px solid black;
+  position: relative;
+  color: black;
+  top: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-align: left;
+  color: black;
+  font-size: 30px;
+}
+
+p {
+  font-size: 22px;
+  text-align: left;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px; 
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: 200px;
+  top: 300px;
+}
+
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: right;
+  right: 200px;
+  top: 300px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(56,148,52,0.8);
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
