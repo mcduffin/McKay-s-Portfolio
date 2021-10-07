@@ -19,51 +19,49 @@
 
   <btn><a class="homebtn"><img src="media/lines.png" onclick="openNav()" alt="menu button"/></a></btn>
 
-  <div id="main">
-    <body>
-      <h2>Professional Documentation</h2>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-              <div class="card">
-                <div class="words">
-                  <h3>Editing Values Statement</h3>
-                  <p>I created an editing values statement, which is a professional document that connects my personal values to how I approach the editing process.</p>
-                  <a href="https://drive.google.com/file/d/1nZ04wtT81W7DMr_HD_4jObuV-ok2-4jn/view?usp=sharing" target=" blank">Published</a>
-                </div>
+  <body>
+    <h2>Professional Documentation</h2>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+            <div class="card">
+              <div class="words">
+                <h3>Editing Values Statement</h3>
+                <p lang="en">I created an editing values statement, which is a professional document that connects my personal values to how I approach the editing process.</p>
+                <a href="https://drive.google.com/file/d/1nZ04wtT81W7DMr_HD_4jObuV-ok2-4jn/view?usp=sharing" target=" blank">Published</a>
               </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-              <div class="card">
-                <div class="words">
-                  <h3>Topic #2</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
-                  <a href="#">Published</a>
-                </div>
-              </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-              <div class="card">
-                <div class="words">
-                  <h3>Topic #3</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
-                  <a href="#">Published</a>
-                </div>
-              </div>
-          </div>
-          <br>
+            </div>
         </div>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+            <div class="card">
+              <div class="words">
+                <h3>Topic #2</h3>
+                <p lang="en">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
+                <a href="#">Published</a>
+              </div>
+            </div>
         </div>
-    </body>
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+            <div class="card">
+              <div class="words">
+                <h3>Topic #3</h3>
+                <p lang="en">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
+                <a href="#">Published</a>
+              </div>
+            </div>
+        </div>
+        <br>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </body>
 
   <script>
     function openNav() {
@@ -82,28 +80,29 @@
   
     function plusSlides(n) {
       showSlides(slideIndex += n);
-  }
+    }
 
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
     
-    if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";    
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
+      if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";    
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    
   </script>
 
 </html>

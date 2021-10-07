@@ -19,28 +19,27 @@
 
   <btn><a class="homebtn"><img src="media/lines.png" onclick="openNav()" alt="menu button"/></a></btn>
   
-  <div id="main">
-    <body>
-      <h2>Risk Communication</h2>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-              <div class="card">
-                <div class="words">
-                  <h3>Topic #1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
-                  <a href="#">Published</a>
-                </div>
+  <body>
+    <h2>Risk Communication</h2>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+            <div class="card">
+              <div class="words">
+                <h3>Topic #1</h3>
+                <p lang="en">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
+                <a href="#">Published</a>
               </div>
+            </div>
           </div>
           <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
               <div class="card">
                 <div class="words">
                   <h3>Risk Message</h3>
-                  <p>I created a risk message that allowed me to communicate the dangers of texting while driving to teenagers learning to drive at school. The document can serve as educational material that is representative of what a risk communicator may do in the real world. The risk message I created shows my ability to tailor complex issues to a diverse audience.</p>
+                  <p lang="en">I created a risk message that allowed me to communicate the dangers of texting while driving to teenagers learning to drive at school. The document can serve as educational material that is representative of what a risk communicator may do in the real world. The risk message I created shows my ability to tailor complex issues to a diverse audience.</p>
                   <a href="https://drive.google.com/file/d/1HznAHBw0pUdhiuVjCrcYopA0RcShNui1/view?usp=sharing" target=" blank">Published</a>
                 </div>
               </div>
@@ -50,7 +49,7 @@
               <div class="card">
                 <div class="words">
                   <h3>Topic #3</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
+                  <p lang="en">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non dui ante.<br> Sed interdum turpis sapien, eget malesuada lacus volutpat a.<br> Morbi condimentum vestibulum mauris, ac ultrices justo fermentum a.<br> Aliquam molestie, justo porttitor dapibus iaculis, massa velit dictum ligula, ut tristique purus nisl sit amet dui.<br> Etiam sit amet facilisis dui. Nunc ipsum nibh, tristique sit amet tempus ac, mattis non eros.<br> Proin ac orci nibh. Donec et convallis est.</p>
                   <a href="#">Published</a>
                 </div>
               </div>
@@ -63,7 +62,6 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </body>
-  </div>
 
   <script>
     function openNav() {
@@ -82,28 +80,29 @@
   
     function plusSlides(n) {
       showSlides(slideIndex += n);
-  }
+    }
 
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
     
-    if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";    
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
+      if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";    
+          }  
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
   </script>
     
 </html>
