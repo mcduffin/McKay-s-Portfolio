@@ -2,12 +2,16 @@
 <html>
   <head>
     <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="contact.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <header>
     <div id="nav" class="sidenav">
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <div id="closebtn">
+      <a href="#">&times;</a>
+      </div>
       <a href="index.html">Home</a>
       <a href="essay.html">Reflection</a>
       <a href="work1.html">Communication</a>
@@ -17,7 +21,9 @@
     </div>
   </header>
 
-  <btn><a class="homebtn"><img src="media/lines.png" onclick="openNav()" alt="menu button"/></a></btn>
+  <div id="homebtn">
+    <btn><a><img src="media/lines.png" alt="menu button"/></a></btn>
+  </div>
 
   <body>
     <div class="contact">
@@ -29,15 +35,29 @@
   </body>
 
   <script>
-    function openNav() {
-      document.getElementById("nav").style.width = "250px";
-      document.getElementById("nav").style.border = "1px solid black";
-    }
-    function closeNav() {
-      document.getElementById("nav").style.width = "0px";
-      document.getElementById("nav").style.border = "0px solid white"; 
-    } 
     
+    $(document).ready(function() {
+      $("#homebtn").click(function() {
+        if( $(window).width() >= 1024 ) {
+          document.getElementById("nav").style.width = "15.625rem";
+          document.getElementById("nav").style.border = "1px solid black";
+            }
+        if( $(window).width() <= 500 ) {
+          document.getElementById("nav").style.width = "15.625rem";
+          document.getElementById("nav").style.border = "1px solid black";
+        }
+        if( $(window).height() <= 500 ) {
+          document.getElementById("nav").style.width = "15.625 rem";
+          document.getElementById("nav").style.border = "1px solid black";
+        }  
+      });
+      
+      $("#closebtn").click(function() {
+        document.getElementById("nav").style.width = "0px";
+        document.getElementById("nav").style.border = "0px solid white";
+      });
+    });      
+      
   </script>
 
 </html>
