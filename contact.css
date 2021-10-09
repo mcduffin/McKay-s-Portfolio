@@ -162,7 +162,7 @@ h1 {
 
 }
 
-@media screen and (max-device-height: 1200px) and (orientation: landscape) {
+@media screen and (max-device-height: 1000px) and (orientation: landscape) {
 
   header {
     width: 100%;
