@@ -85,10 +85,12 @@ body {
 
   .essay-main h3 {
     font-size: 1.75rem;
+    margin-left: 0.9375rem;
   }
 
   .essay-main h4 {
-    font-size: 1.625rem;    
+    font-size: 1.625rem;
+    margin-left: 0.9375rem;    
   }
 
   p {
@@ -173,10 +175,12 @@ body {
 
   .essay-main h3 {
     font-size: 1.75rem;
+    margin-left: 0.9375rem;
   }
 
   .essay-main h4 {
     font-size: 1.625rem;
+    margin-left: 0.9375rem;
   }
 
   p {
@@ -259,10 +263,12 @@ body {
 
   .essay-main h3 {
     font-size: 1.75rem;
+    margin-left: 0.9375rem;
   }
 
   .essay-main h4 {
-    font-size: 1.625rem;    
+    font-size: 1.625rem;
+    margin-left: 0.9375rem;    
   }
 
   p {
