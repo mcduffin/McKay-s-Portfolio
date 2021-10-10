@@ -83,14 +83,12 @@ body {
     margin-left: 0.9375rem;
   }
 
-  h3 {
+  .essay-main h3 {
     font-size: 1.75rem;
-    text-align: left;
   }
 
-  h4 {
-    font-size: 1.625rem;
-    text-align: left;    
+  .essay-main h4 {
+    font-size: 1.625rem;    
   }
 
   p {
@@ -173,14 +171,12 @@ body {
     margin-left: 0.9375rem;
   }
 
-  h3 {
+  .essay-main h3 {
     font-size: 1.75rem;
-    text-align: left;
   }
 
-  h4 {
+  .essay-main h4 {
     font-size: 1.625rem;
-    text-align: left;    
   }
 
   p {
@@ -261,14 +257,12 @@ body {
     margin-left: 0.9375rem;
   }
 
-  h3 {
+  .essay-main h3 {
     font-size: 1.75rem;
-    text-align: left;
   }
 
-  h4 {
-    font-size: 1.625rem;
-    text-align: left;    
+  .essay-main h4 {
+    font-size: 1.625rem;    
   }
 
   p {
