@@ -93,6 +93,7 @@ body {
     padding-bottom: 9.25rem;
     padding-top: 3.125rem;
     width: 70%;
+    margin-right: 10px;
     position: absolute;
     left: 24.375rem;
     z-index: 1;
